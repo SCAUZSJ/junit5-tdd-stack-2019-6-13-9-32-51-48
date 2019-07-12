@@ -93,7 +93,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void return_whizz_when_num_is_15() {
+    public void return_fizzbuzz_when_num_is_15() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int num = 15;
@@ -104,7 +104,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void return_whizz_when_num_is_21() {
+    public void return_fizzwhizz_when_num_is_21() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int num = 21;
@@ -112,5 +112,16 @@ public class FizzBuzzTest {
         String result = fizzBuzz.convert(num);
         //then
         Assertions.assertEquals("FizzWhizz",result);
+    }
+
+    @Test
+    public void return_buzzwhizz_when_num_is_35() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int num = 35;
+        //when
+        String result = fizzBuzz.convert(num);
+        //then
+        Assertions.assertEquals("BuzzWhizz",result);
     }
 }
