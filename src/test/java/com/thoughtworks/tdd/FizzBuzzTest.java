@@ -26,4 +26,15 @@ public class FizzBuzzTest {
         Assertions.assertEquals("2",result);
     }
 
+    @Test
+    public void return_fizz_when_num_is_3() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int num = 3;
+        //when
+        String result = fizzBuzz.convert(num);
+        //then
+        Assertions.assertEquals("Fizz",result);
+    }
+
 }
