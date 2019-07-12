@@ -48,4 +48,15 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Fizz",result);
     }
 
+    @Test
+    public void return_buzz_when_num_is_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int num = 5;
+        //when
+        String result = fizzBuzz.convert(num);
+        //then
+        Assertions.assertEquals("Buzz",result);
+    }
+
 }
