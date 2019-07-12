@@ -59,4 +59,15 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Buzz",result);
     }
 
+    @Test
+    public void return_buzz_when_num_is_10() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int num = 10;
+        //when
+        String result = fizzBuzz.convert(num);
+        //then
+        Assertions.assertEquals("Buzz",result);
+    }
+
 }
