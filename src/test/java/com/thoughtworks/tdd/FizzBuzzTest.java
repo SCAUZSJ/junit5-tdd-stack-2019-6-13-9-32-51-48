@@ -70,4 +70,14 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Buzz",result);
     }
 
+    @Test
+    public void return_whizz_when_num_is_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int num = 7;
+        //when
+        String result = fizzBuzz.convert(num);
+        //then
+        Assertions.assertEquals("Whizz",result);
+    }
 }
