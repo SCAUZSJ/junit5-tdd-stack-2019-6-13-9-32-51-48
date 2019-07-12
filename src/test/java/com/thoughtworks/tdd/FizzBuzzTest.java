@@ -124,4 +124,14 @@ public class FizzBuzzTest {
         //then
         Assertions.assertEquals("BuzzWhizz",result);
     }
+    @Test
+    public void return_fizzbuzz_when_num_is_30() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int num = 30;
+        //when
+        String result = fizzBuzz.convert(num);
+        //then
+        Assertions.assertEquals("FizzBuzz",result);
+    }
 }
