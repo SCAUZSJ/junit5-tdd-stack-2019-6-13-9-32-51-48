@@ -3,7 +3,7 @@ package com.thoughtworks.tdd;
 public class FizzBuzz {
     public String convert(int num){
         if(num % 15 ==0) return "FizzBuzz";
-        if(num == 21) return "FizzWhizz";
+        if(num % 21 == 0) return "FizzWhizz";
         if(num == 35) return  "BuzzWhizz";
         if(num % 7 == 0) return "Whizz";
         if(num % 5 == 0) return "Buzz";
